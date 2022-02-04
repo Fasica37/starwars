@@ -49,5 +49,11 @@ body {
       background-position-y: 256px;
     }
   }
-  
+  .game .enemy {
+    position: absolute;
+    margin-left: -20px;
+    margin-top: -18px;
+    width: 40px;
+  }
+   
   
