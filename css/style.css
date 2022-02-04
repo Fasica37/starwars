@@ -60,4 +60,8 @@ body {
     margin-left: -2.5px;
     height: 30px;
   } 
-  
+  .game .enemy-laser {
+    position: absolute;
+    margin-left: -2.5px;
+    height: 30px;
+  }
