@@ -55,5 +55,9 @@ body {
     margin-top: -18px;
     width: 40px;
   }
-   
+  .game .laser {
+    position: absolute;
+    margin-left: -2.5px;
+    height: 30px;
+  } 
   
