@@ -76,3 +76,7 @@ body {
   text-align: center;
   animation: pop-in 1s;
 }
+.game-over {
+    display: none;
+    position: absolute;
+  }
