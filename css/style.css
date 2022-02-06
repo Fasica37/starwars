@@ -79,4 +79,7 @@ body {
 .game-over {
     display: none;
     position: absolute;
+    background: #6b1818;
+    color: white;
+    padding: 20px 50px;
   }
