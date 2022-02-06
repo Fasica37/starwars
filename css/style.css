@@ -66,6 +66,10 @@ body {
     height: 30px;
   }
   .congratulations {
-    
+    display: none;
+    position: absolute;
+    background: #c7a526;
+    color: white;
+   
   }
   
