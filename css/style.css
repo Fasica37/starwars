@@ -8,3 +8,15 @@ body {
   margin: 0;
   font: 16px sans-serif;
 }
+
+.congratulations {
+  display: none;
+}
+
+.game-over {
+  display: none;
+}
+
+.show-element {
+  display: block;
+}
