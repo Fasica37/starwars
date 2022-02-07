@@ -8,11 +8,11 @@ Assignment for Software Engineering Tool and Practices Course
 
 Contributors
 
-- ![Fasica Zewdie](https://github.com/fasica37)
-- ![Gedion Teshome](https://github.com/gediont)
-- ![Henok Fisseha](https://github.com/henokaa)
-- ![Fentahun Ayana](https://github.com/fentahun-arch)
-- ![Eyob Aschenaki](https://github.com/eyobashenaki)
+- [Fasica Zewdie](https://github.com/fasica37)
+- [Gedion Teshome](https://github.com/gediont)
+- [Henok Fisseha](https://github.com/henokaa)
+- [Fentahun Ayana](https://github.com/fentahun-arch)
+- [Eyob Aschenaki](https://github.com/eyobashenaki)
 
 ### Installation
 
@@ -21,3 +21,8 @@ Clone this repository and add your game logic modification to the js/game.js
 ### Game Instruction
 
 Move your spaceship using the arrow keys on your keyboard to hit enough targets to win the game
+
+````
+    the sound assets and video assets are from the Star Wars game. So it is copyright for use under different circumstance, use at own accord.
+
+````
