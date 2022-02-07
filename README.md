@@ -1,5 +1,9 @@
 # Star Wars
 
+[![SL Scan](https://github.com/Fasica37/starwars/actions/workflows/shiftleft-analysis.yml/badge.svg?branch=main)](https://github.com/Fasica37/starwars/actions/workflows/shiftleft-analysis.yml)
+
+[![pages-build-deployment](https://github.com/Fasica37/starwars/actions/workflows/pages/pages-build-deployment/badge.svg?branch=main)](https://github.com/Fasica37/starwars/actions/workflows/pages/pages-build-deployment)
+
 `An in-browser game to play adventurous star war game`
 
 ![download](https://user-images.githubusercontent.com/26666155/151783480-c36c45d6-1b7e-4936-b652-75b69ba613a9.jpg)
