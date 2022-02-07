@@ -22,7 +22,12 @@ Clone this repository and add your game logic modification to the js/game.js
 
 Move your spaceship using the arrow keys on your keyboard to hit enough targets to win the game
 
-````
+If several enemy ships are in the same row, they will all shoot at the same time.
+And if ammunition and beams from enemy strike your spaceship, you will lose the game.
+
+Try to survive this mania
+
+```
     the sound assets and video assets are from the Star Wars game. So it is copyright for use under different circumstance, use at own accord.
 
-````
+```
