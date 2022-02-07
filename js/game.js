@@ -30,6 +30,15 @@ const GAME_STATE = {
   gameOver: false
 };
 
+function rectsIntersect(r1, r2) {
+  return !(
+    r2.left > r1.right ||
+    r2.right < r1.left ||
+    r2.top > r1.bottom ||
+    r2.bottom < r1.top
+  );
+}
+
 let winGame = document.getElementsByClassName('congratulations');
 let loseGame = document.getElementsByClassName('game-over');
 
