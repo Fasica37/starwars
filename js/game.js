@@ -1,11 +1,21 @@
-let winGame = document.getElementsByClassName('congratulations');
-let loseGame = document.getElementsByClassName('game-over');
+// define variables
 
-let winLoseLuck;
-function startGame() {
-  winLoseLuck = Math.round(Math.random());
-  winGame = Array.from(winGame)[0];
-  loseGame = Array.from(loseGame)[0];
-  if (winLoseLuck) winGame.setAttribute('class', 'show-element');
-  else loseGame.setAttribute('class', 'show-element');
-}
+const KEY_CODE_LEFT = 37;
+const KEY_CODE_RIGHT = 39;
+const KEY_CODE_SPACE = 32;
+
+const GAME_WIDTH = 800;
+const GAME_HEIGHT = 600;
+
+const PLAYER_WIDTH = 20;
+const PLAYER_MAX_SPEED = 600.0;
+const LASER_MAX_SPEED = 300.0;
+const LASER_COOLDOWN = 0.5;
+
+const ENEMIES_PER_ROW = 10;
+const ENEMY_HORIZONTAL_PADDING = 80;
+const ENEMY_VERTICAL_PADDING = 70;
+const ENEMY_VERTICAL_SPACING = 80;
+const ENEMY_COOLDOWN = 5.0;
+
+// 
