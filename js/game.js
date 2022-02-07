@@ -1,6 +1,3 @@
-
-// define variables
-
 const KEY_CODE_LEFT = 37;
 const KEY_CODE_RIGHT = 39;
 const KEY_CODE_SPACE = 32;
@@ -19,9 +16,6 @@ const ENEMY_VERTICAL_PADDING = 70;
 const ENEMY_VERTICAL_SPACING = 80;
 const ENEMY_COOLDOWN = 5.0;
 
-
-// create game state object
-
 const GAME_STATE = {
   lastTime: Date.now(),
   leftPressed: false,
@@ -33,10 +27,9 @@ const GAME_STATE = {
   lasers: [],
   enemies: [],
   enemyLasers: [],
-  gameOver: false,
+  gameOver: false
 };
 
-<<<<<<< HEAD
 function rectsIntersect(r1, r2) {
   return !(
     r2.left > r1.right ||
@@ -44,6 +37,20 @@ function rectsIntersect(r1, r2) {
     r2.top > r1.bottom ||
     r2.bottom < r1.top
   );
+}
+
+function setPosition(el, x, y) {
+  el.style.transform = `translate(${x}px, ${y}px)`;
+}
+
+function clamp(v, min, max) {
+  if (v < min) {
+    return min;
+  } else if (v > max) {
+    return max;
+  } else {
+    return v;
+  }
 }
 
 let winGame = document.getElementsByClassName('congratulations');
@@ -57,5 +64,3 @@ function startGame() {
   if (winLoseLuck) winGame.setAttribute('class', 'show-element');
   else loseGame.setAttribute('class', 'show-element');
 }
-=======
->>>>>>> a8fafd5c56d38b3afeea0d23fbc5102fa40e594f
