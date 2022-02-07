@@ -1,8 +1,6 @@
 # Star Wars
 
-[![SL Scan](https://github.com/Fasica37/starwars/actions/workflows/shiftleft-analysis.yml/badge.svg?branch=main)](https://github.com/Fasica37/starwars/actions/workflows/shiftleft-analysis.yml)
-
-[![pages-build-deployment](https://github.com/Fasica37/starwars/actions/workflows/pages/pages-build-deployment/badge.svg?branch=main)](https://github.com/Fasica37/starwars/actions/workflows/pages/pages-build-deployment)
+[![Code Scan Analysis](https://github.com/Fasica37/starwars/actions/workflows/shiftleft-analysis.yml/badge.svg?branch=main)](https://github.com/Fasica37/starwars/actions/workflows/shiftleft-analysis.yml) [![Deployment Status](https://github.com/Fasica37/starwars/actions/workflows/pages/pages-build-deployment/badge.svg?branch=main)](https://github.com/Fasica37/starwars/actions/workflows/pages/pages-build-deployment)
 
 `An in-browser game to play adventurous star war game`
 
