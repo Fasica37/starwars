@@ -8,7 +8,6 @@ body {
   margin: 0;
   font: 16px sans-serif;
 }
-<<<<<<< HEAD
 .wrap {
     display: flex;
     flex-direction: column;
@@ -88,17 +87,3 @@ body {
     text-align: center;
     animation: pop-in 1s;
   }
-=======
-
-.congratulations {
-  display: none;
-}
-
-.game-over {
-  display: none;
-}
-
-.show-element {
-  display: block;
-}
->>>>>>> 23bd95e92538d645b3b6d2aa81c36e1d5892fc03
