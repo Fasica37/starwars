@@ -11,6 +11,7 @@ Contributors
 - Gedion Teshome
 - Henok Fisseha
 - Fentahun Ayana
+- Eyob Aschenaki
 
 ### Installation
 
