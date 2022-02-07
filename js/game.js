@@ -1,3 +1,6 @@
+
+// define variables
+
 const KEY_CODE_LEFT = 37;
 const KEY_CODE_RIGHT = 39;
 const KEY_CODE_SPACE = 32;
@@ -16,6 +19,9 @@ const ENEMY_VERTICAL_PADDING = 70;
 const ENEMY_VERTICAL_SPACING = 80;
 const ENEMY_COOLDOWN = 5.0;
 
+
+// create game state object
+
 const GAME_STATE = {
   lastTime: Date.now(),
   leftPressed: false,
@@ -27,17 +33,6 @@ const GAME_STATE = {
   lasers: [],
   enemies: [],
   enemyLasers: [],
-  gameOver: false
+  gameOver: false,
 };
 
-let winGame = document.getElementsByClassName('congratulations');
-let loseGame = document.getElementsByClassName('game-over');
-
-let winLoseLuck;
-function startGame() {
-  winLoseLuck = Math.round(Math.random());
-  winGame = Array.from(winGame)[0];
-  loseGame = Array.from(loseGame)[0];
-  if (winLoseLuck) winGame.setAttribute('class', 'show-element');
-  else loseGame.setAttribute('class', 'show-element');
-}
