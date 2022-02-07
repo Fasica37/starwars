@@ -18,4 +18,17 @@ const ENEMY_VERTICAL_PADDING = 70;
 const ENEMY_VERTICAL_SPACING = 80;
 const ENEMY_COOLDOWN = 5.0;
 
-// 
+// create game state object
+const GAME_STATE = {
+  lastTime: Date.now(),
+  leftPressed: false,
+  rightPressed: false,
+  spacePressed: false,
+  playerX: 0,
+  playerY: 0,
+  playerCooldown: 0,
+  lasers: [],
+  enemies: [],
+  enemyLasers: [],
+  gameOver: false,
+};
