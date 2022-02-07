@@ -6,14 +6,12 @@
 
 Assignment for Software Engineering Tool and Practices Course
 
-
-
 Contributors
 
 - ![Fasica Zewdie](https://github.com/fasica37)
 - ![Gedion Teshome](https://github.com/gediont)
 - ![Henok Fisseha](https://github.com/henokaa)
-- ![Fentahun Ayana](https://github.com/)
+- ![Fentahun Ayana](https://github.com/fentahun-arch)
 - ![Eyob Aschenaki](https://github.com/eyobashenaki)
 
 ### Installation
