@@ -103,6 +103,10 @@ body {
       font: 14px sans-serif;
     }
     @keyframes pop-in {
+        0% {
+          opacity: 0;
+          transform: translate(0, -100px);
+        }
 
       }
         
