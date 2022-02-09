@@ -123,3 +123,13 @@ function onKeyDown(e) {
     GAME_STATE.spacePressed = true;
   }
 }
+
+function onKeyUp(e) {
+  if (e.keyCode === KEY_CODE_LEFT) {
+    GAME_STATE.leftPressed = false;
+  } else if (e.keyCode === KEY_CODE_RIGHT) {
+    GAME_STATE.rightPressed = false;
+  } else if (e.keyCode === KEY_CODE_SPACE) {
+    GAME_STATE.spacePressed = false;
+  }
+}
