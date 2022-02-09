@@ -114,6 +114,50 @@ function updatePlayer(dt, $container) {
   setPosition(player, GAME_STATE.playerX, GAME_STATE.playerY);
 }
 
+function init() {
+  const $container = document.querySelector(".game");
+  createPlayer($container);
+
+  const enemySpacing =
+    (GAME_WIDTH - ENEMY_HORIZONTAL_PADDING * 2) / (ENEMIES_PER_ROW - 1);
+  for (let j = 0; j < 3; j++) {
+    const y = ENEMY_VERTICAL_PADDING + j * ENEMY_VERTICAL_SPACING;
+    for (let i = 0; i < ENEMIES_PER_ROW; i++) {
+      const x = i * enemySpacing + ENEMY_HORIZONTAL_PADDING;
+      createEnemy($container, x, y);
+    }
+  }
+}
+
+function playerHasWon() {
+  return GAME_STATE.enemies.length === 0;
+}
+
+function update(e) {
+  const currentTime = Date.now();
+  const dt = (currentTime - GAME_STATE.lastTime) / 1000.0;
+
+  if (GAME_STATE.gameOver) {
+    document.querySelector(".game-over").style.display = "block";
+    return;
+  }
+
+  if (playerHasWon()) {
+    document.querySelector(".congratulations").style.display = "block";
+    return;
+  }
+
+  const $container = document.querySelector(".game");
+  updatePlayer(dt, $container);
+  updateLasers(dt, $container);
+  updateEnemies(dt, $container);
+  updateEnemyLasers(dt, $container);
+
+  GAME_STATE.lastTime = currentTime;
+  window.requestAnimationFrame(update);
+}
+
+
 function onKeyDown(e) {
   if (e.keyCode === KEY_CODE_LEFT) {
     GAME_STATE.leftPressed = true;
@@ -131,21 +175,6 @@ function onKeyUp(e) {
     GAME_STATE.rightPressed = false;
   } else if (e.keyCode === KEY_CODE_SPACE) {
     GAME_STATE.spacePressed = false;
-  }
-}
-
-function init() {
-  const $container = document.querySelector(".game");
-  createPlayer($container);
-
-  const enemySpacing =
-    (GAME_WIDTH - ENEMY_HORIZONTAL_PADDING * 2) / (ENEMIES_PER_ROW - 1);
-  for (let j = 0; j < 3; j++) {
-    const y = ENEMY_VERTICAL_PADDING + j * ENEMY_VERTICAL_SPACING;
-    for (let i = 0; i < ENEMIES_PER_ROW; i++) {
-      const x = i * enemySpacing + ENEMY_HORIZONTAL_PADDING;
-      createEnemy($container, x, y);
-    }
   }
 }
 
