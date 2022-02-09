@@ -81,6 +81,13 @@ function createPlayer($container) {
   setPosition($player, GAME_STATE.playerX, GAME_STATE.playerY);
 }
 
+function destroyPlayer($container, player) {
+  $container.removeChild(player);
+  GAME_STATE.gameOver = true;
+  const audio = new Audio("sound/sfx-lose.ogg");
+  audio.play();
+}
+
 function updatePlayer(dt, $container) {
   if (GAME_STATE.leftPressed) {
     GAME_STATE.playerX -= dt * PLAYER_MAX_SPEED;
