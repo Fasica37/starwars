@@ -64,3 +64,11 @@ function startGame() {
   if (winLoseLuck) winGame.setAttribute('class', 'show-element');
   else loseGame.setAttribute('class', 'show-element');
 }
+
+function createPlayer($container) {
+  const $player = document.createElement("img");
+  $player.src = "img/player-blue-1.png";
+  $player.className = "player";
+  $container.appendChild($player);
+  setPosition($player, GAME_STATE.playerX, GAME_STATE.playerY);
+}
