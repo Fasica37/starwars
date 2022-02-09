@@ -65,6 +65,12 @@ function startGame() {
   else loseGame.setAttribute('class', 'show-element');
 }
 
+function rand(min, max) {
+  if (min === undefined) min = 0;
+  if (max === undefined) max = 1;
+  return min + Math.random() * (max - min);
+}
+
 function createPlayer($container) {
   GAME_STATE.playerX = GAME_WIDTH / 2;
   GAME_STATE.playerY = GAME_HEIGHT - 50;
