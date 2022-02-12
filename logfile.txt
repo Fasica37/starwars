@@ -1,0 +1,119 @@
+
+
+/// Log File 
+// Includes different task responsibilities and different commands used on this project
+
+
+
+Gedion Teshome 
+
+    - Configured initial repository with git init 
+    - Configured all config global files 
+            `` git config --user.name <name>   ``
+            `` git config --user.email <email> ``
+    - Set up Deployment actions to GitHub Pages
+    - Set up Branching and Contribution rules
+    - Cloned repository from source repository to local machine
+            `` git clone https://github.com/Fasica37/starwars ``
+    - git remote add origin https://github.com/fasica37/starwars
+    - git checkout -b ged/dev
+        - git add .
+        - git commit -m <several commits>
+        - made several changes to game logic, READme, styling, and assets
+    - git checkout -b Gedion-T-patch-1
+        - git add .
+        - git commit -m <several commits>
+    - git stash
+    - git pop
+    - git checkout main 
+    - git merge ged/dev
+    - git checkout ged/dev
+    - git add .
+    - git commit -m <different messages>
+    - git push origin
+    - Created several Pull Requests
+    - Created initial release
+    - Created a tag
+    
+
+
+Fasica Zewdie
+    - Setup initial github repository
+    - Invited all collaborators
+    - Configured initial repository with git init 
+    - Configured all config global files 
+            `` git config --user.name <name>   ``
+            `` git config --user.email <email> ``
+    - Set up Deployment actions to GitHub Pages
+    - Set up Branching and Contribution rules
+        - git checkout -b fasica/add-features
+        - git add .
+        - git commit -m <several commits>
+    - Added several game logic, assets, and view changes
+    - git checkout main 
+    - git merge fasica/add-features
+    - git checkout fasica/add-features
+    - git add .
+    - git commit -m <different messages>
+    - merged and approved several PRs on GitHub
+    - Solved git conflicts manually and inside GitHub
+    - git ammend
+
+
+
+Henok Fisseha
+    - Configured initial repository with git init 
+    - Configured all config global files 
+            `` git config --user.name <name>   ``
+            `` git config --user.email <email> ``
+    - Set up Deployment actions to GitHub Pages
+    - Set up Branching and Contribution rules
+        - git checkout -b feat-henok
+        - git add .
+        - git commit -m <several commits>
+        - added several contributions to styling and logic of the game details
+    - git checkout main 
+    - git merge feat-henok
+    - git stash
+    - git pop
+    - git checkout feat-henok
+    - git add .
+    - git commit -m <different messages>
+
+
+
+Fentahun Ayana
+    - Configured initial repository with git init 
+    - Configured all config global files 
+            `` git config --user.name <name>   ``
+            `` git config --user.email <email> ``
+    - Set up Deployment actions to GitHub Pages
+    - Set up Branching and Contribution rules
+        - git checkout -b dev/fentsh
+        - git add .
+        - git commit -m <several commits>
+        - added several contributions to styling and logic of the game details
+    - git checkout main 
+    - git merge dev/fentsh
+    - git checkout dev/fentsh
+    - git add .
+    - git commit -m <different messages>
+
+
+
+Eyob Aschenaki
+    - Configured initial repository with git init 
+    - Configured all config global files 
+            `` git config --user.name <name>   ``
+            `` git config --user.email <email> ``
+    - Set up Deployment actions to GitHub Pages
+    - Set up Branching and Contribution rules
+        - git checkout -b EA/dev
+        - git add .
+        - git commit -m <several commits>
+        - added several contributions to styling and logic of the game details
+    - git checkout main 
+    - git merge EA/dev
+    - git checkout EA/dev
+    - git add .
+    - git commit -m <different messages>
